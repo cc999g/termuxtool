@@ -58,19 +58,19 @@ Termux 工具版环境配置脚本是一个功能强大的 Bash 脚本，专为 
 
 1. **克隆或下载脚本**
 `# 克隆项目（如果使用代理或镜像）`
-`git clone https://github.com/cc999g/termuxtool.git`
-`cd termuxtool`
+`git clone https://github.com/cc999g/termux-enhancer.git`
+`cd termux-enhancer`
 ``
 `# 或者直接下载脚本`
-`curl -O https://raw.githubusercontent.com/cc999g/termuxtool/main/termuxtool.sh`
-`chmod +x termuxtool.sh`
+`curl -O https://raw.githubusercontent.com/cc999g/termux-enhancer/main/termux-enhancer.sh`
+`chmod +x termux-enhancer.sh`
 
 2. **首次运行配置**
 `# 运行脚本`
-`./termuxtool.sh`
+`./termux-enhancer.sh`
 ``
 `# 或使用安装到启动项`
-`./termuxtool.sh`
+`./termux-enhancer.sh`
 `# 在交互菜单中选择安装脚本到启动项`
 
 3. **安装到启动项（推荐）**
@@ -80,17 +80,17 @@ Termux 工具版环境配置脚本是一个功能强大的 Bash 脚本，专为 
 - 创建快捷命令 `tool`
 
 `# 安装后，可以使用以下方式启动`
-`tool              # 快捷命令启动`
+`termux-enhancer              # 快捷命令启动`
 `# 或者重启 Termux 自动加载`
 
 4. **卸载脚本**
 `# 运行卸载脚本`
-`~/.termux/boot/uninstall_tool.sh`
+`~/.termux/boot/uninstall_enhancer.sh`
 ``
 `# 或者手动移除`
-`rm -f ~/.termux/boot/termuxtool.sh`
-`rm -f ~/.termux/boot/uninstall_tool.sh`
-`sed -i '/termuxtool/d' ~/.bashrc`
+`rm -f ~/.termux/boot/termux-enhancer.sh`
+`rm -f ~/.termux/boot/uninstall_enhancer.sh`
+`sed -i '/termux-enhancer/d' ~/.bashrc`
 `unalias tool 2>/dev/null`
 
 ## 📚 详细使用指南
@@ -178,10 +178,10 @@ Termux 工具版环境配置脚本是一个功能强大的 Bash 脚本，专为 
 ## ⚙️ 配置说明
 
 ### 配置文件位置
-- 主配置文件: `~/.termuxtool_config`
+- 主配置文件: `~/.termux_enhancer_config`
 - GitHub PAT 配置: `~/.github_pat`
 - Git 凭据文件: `~/.git-credentials`
-- 备份目录: `~/.termuxtool_backups/`
+- 备份目录: `~/.termux_enhancer_backups/`
 - 日志文件: `~/.termuxtool.log`
 
 ### 配置项说明
@@ -212,7 +212,7 @@ Termux 工具版环境配置脚本是一个功能强大的 Bash 脚本，专为 
 
 ## 📁 项目结构
 
-`termuxtool/`
+`termux-enhancer/`
 `├── termuxtool.sh          # 主脚本文件`
 `├── README.md                   # 项目说明文档`
 `├── version.txt                 # 版本信息文件`
@@ -283,7 +283,7 @@ Termux 工具版环境配置脚本是一个功能强大的 Bash 脚本，专为 
 
 ## 📞 支持与反馈
 
-- 提交 Issue: [GitHub Issues](https://github.com/cc999g/termuxtool/issues)
+- 提交 Issue: [GitHub Issues](https://github.com/cc999g/termux-enhancer/issues)
 - 功能建议: 欢迎提出新功能建议
 - 问题反馈: 遇到问题请提供详细描述和日志
 
