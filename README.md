@@ -1,4 +1,3 @@
-# termuxtool
 # Termux 工具版环境配置脚本
 
 <p align="center">
